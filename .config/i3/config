@@ -577,3 +577,41 @@ bindsym $mod+t exec rofi -show window \
 #exec --no-startup-id greenclip daemon>/dev/null
 #bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard \
 #		-config ~/.config/rofi/rofidmenu.rasi
+
+mode "screen" {
+	# Screen States
+	## Screen rotation
+	### Screen 1
+	bindsym Ctrl+l exec xrandr --output DP-0 --rotate left
+	bindsym Ctrl+r exec xrandr --output DP-0 --rotate right
+	bindsym Ctrl+t exec xrandr --output DP-0 --rotate normal
+	bindsym Ctrl+b exec xrandr --output DP-0 --rotate inverted
+	### Screen 2
+	bindsym Ctrl+Shift+l exec xrandr --output DP-2 --rotate left
+	bindsym Ctrl+Shift+r exec xrandr --output DP-2 --rotate right
+	bindsym Ctrl+Shift+t exec xrandr --output DP-2 --rotate normal
+	bindsym Ctrl+Shift+b exec xrandr --output DP-2 --rotate inverted
+	## Directions
+	### Screen 1
+	bindsym l exec xrandr --output DP-2 --auto --left-of DP-0
+	bindsym r exec xrandr --output DP-2 --auto --right-of DP-0
+	bindsym t exec xrandr --output DP-2 --auto --above DP-0
+	bindsym b exec xrandr --output DP-2 --auto --below DP-0
+	### Screen 2
+	bindsym Shift+l exec xrandr --output HMDI-1 --auto --left-of DP-0
+        bindsym Shift+r exec xrandr --output HDMI-1 --auto --right-of DP-0
+        bindsym Shift+t exec xrandr --output HDMI-1 --auto --above DP-0
+        bindsym Shift+b exec xrandr --output HDMI-1 --auto --below DP-0
+	## Mirroring
+	bindsym m exec xrandr --output DP-2 --auto --same-as DP-0
+	bindsym Shift+m exec xrandr --output HDMI-1 --auto --same-as DP-0
+	## External only
+	### Off
+	bindsym e exec xrandr --output DP-0 --off
+	### On
+	bindsym z exec xrandr --output DP-0 --auto --right-of DP-2
+	## Disabling screen
+	bindsym o exec xrandr --output DP-2 --off
+	# Close mode
+	bindsym Escape mode "default"
+}
