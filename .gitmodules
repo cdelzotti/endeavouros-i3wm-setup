@@ -1,0 +1,3 @@
+[submodule "PKGBUILDS"]
+	path = PKGBUILDS
+	url = https://github.com/endeavouros-team/PKGBUILDS.git
