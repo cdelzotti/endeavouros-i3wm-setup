@@ -26,13 +26,19 @@ inside `~/.config/i3/config`.
 
 <img src="https://raw.githubusercontent.com/endeavouros-team/screenshots/master/linkey.png" alt="drawing" width="250"/>
 
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/keyhint-april14.png "main-shortcuts")
+# default EndeavourOS i3-wm keycodes:
 
-# default i3-wm keycodes: 
-https://i3wm.org/docs/userguide.html#_default_keybindings
+Keybindings are different from the i3 defaults to fit into the setup.
+
+There are 2 tools that helps you to check them:
+
+The keyboard icon on panel open a little GUI helper and by pressing <kbd>F1</kbd>
+
+<img src="https://raw.githubusercontent.com/endeavouros-team/screenshots/master/i3-keybind-helper.png" alt="keybind-helper" width="250"/>
+
 
 # Display setup with arandr
-![alt text](https://raw.githubusercontent.com/endeavouros-team/screenshots/master/arandr-display-setup-i3.png "arandr-i3-display-setup")
+<img src="https://raw.githubusercontent.com/endeavouros-team/screenshots/master/arandr-display-setup-i3.png" alt="arandr-i3-display-setup" width="250"/>
 * open arandr and setup display/s as you need.
 * save the setup from arandr menu or button exactly with filename `monitor`.
 ---> on i3 EndeavourOS we have a starter line in the ~/.config/i3/config
