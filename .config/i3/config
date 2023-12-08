@@ -395,7 +395,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
+# exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -639,12 +639,12 @@ focus_follows_mouse no
 exec nextcloud
 
 # Default screen positions
-exec xrandr --output DP-2 --auto --primary
-exec xrandr --output DP-0 --auto --right-of DP-2
-exec xrandr --output HDMI-0 --auto --left-of DP-2
+exec xrandr --output DP-0 --auto --primary
+exec xrandr --output DP-2 --auto --left-of DP-0
+exec xrandr --output HDMI-1 --auto --right-of DP-0
 
 # setup wallpaper
-exec feh --bg-scale /home/elkins/Pictures/merry-wallpaper.jpg
+exec feh --bg-fill /home/elkins/Pictures/going-merry.png
 
 # Screenshot shortcut
 ## Screenshots
